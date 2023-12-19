@@ -61,6 +61,17 @@ CREATE TABLE bytea_container (
     data bytea
 );
 
+/* date/time variations */
+CREATE TABLE date_time_etc (
+    id serial primary key,
+    t1 timestamp,
+    t2 timestamptz,
+    d1 date,
+    t3 time,
+    t4 timetz,
+    i1 interval
+);
+
 /*** references ***/
 /* identity PK */
 CREATE TABLE identity_pk (
