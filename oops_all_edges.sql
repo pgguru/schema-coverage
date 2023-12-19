@@ -25,6 +25,12 @@ CREATE TABLE multicol_dropped (
 ALTER TABLE multicol_dropped DROP COLUMN column1, DROP COLUMN column4, ADD COLUMN column8 int;
 ALTER TABLE multicol_dropped DROP COLUMN column2, ADD COLUMN column1 int, ADD COLUMN column9 int;
 
+/* names */
+CREATE TABLE "Weirdly Named Table" (
+    "Why not weird columns too?" text,
+    "変だけど日本語で" text
+);
+
 /* namespaces */
 -- TODO
 
